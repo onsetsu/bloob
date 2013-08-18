@@ -1,0 +1,9 @@
+Bloob.UniqueIdGenerator = function() {
+	this.store = {
+		"nextId" = 0
+	};
+};
+
+Bloob.Map.prototype.nextId = function(callback) {
+	return this.store.nextId++;
+};
