@@ -183,6 +183,7 @@
 		},
 		"ground2": {
 			"bluePrint": "groundRectangle",
+			"shape": "i",
 			"translate": {"x": -10, "y": 0},
 			"rotate": -0.1
 		},
