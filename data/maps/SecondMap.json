@@ -88,7 +88,10 @@
 				},
 				{
 					"pointA": 1,
-					"pointB": 5,"springK": 300.0,"damping": 10.0},
+					"pointB": 5,
+					"springK": 300.0,
+					"damping": 10.0
+				},
 				{
 					"pointA": 14,
 					"pointB": 5,
