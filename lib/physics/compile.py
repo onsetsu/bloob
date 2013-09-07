@@ -40,8 +40,7 @@ INPUT_FILES.append("debugdraw.js")
 
 INPUT_FILES.append("contactmanager.js")
 
-INTRO_FILE = "intro.js"
-OUTRO_FILE = "outro.js"
+WRAPPER_FILE = "wrap.js"
 
 
 def main():
