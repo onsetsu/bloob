@@ -110,7 +110,7 @@ class HTTPHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             path = os.path.join(BASE_DIR, path.replace('..', ''))
             data = self.post_params['data'][0]
 
-            if path.endswith('.js'):
+            if path.endswith('.js') or path.endswith('.json'):
                 try:
                     open(path, 'w').write(data)
                 except:
@@ -119,7 +119,7 @@ class HTTPHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
             else:
                 resp['error'] = 3
-                resp['msg'] = 'File must have a .js suffix'
+                resp['msg'] = 'File must have a .js or .json suffix'
 
         else:
             resp['error'] = 1
