@@ -18,9 +18,66 @@
 		
 		<script src="lib/external/libraryextensions.js"></script>
 		
-		<!-- TODO: host differently (using gist?) -->
-		<script src="https://raw.github.com/onsetsu/jellojs/master/jello.js"></script>
-		<script>window.Jello || document.write('<script src="lib/external/jello.js">\x3C/script>')</script>
+		<!-- TODO: Include compiled Jello library -->
+		<script src="lib/physics/queue.js"></script>
+		<script src="lib/physics/bitmask.js"></script>
+		<script src="lib/physics/internalspring.js"></script>
+		<script src="lib/physics/jellyprerequisites.js"></script>
+		<script src="lib/physics/vector2.js"></script>
+		<script src="lib/physics/pointmass.js"></script>
+		<script src="lib/physics/aabb.js"></script>
+		<script src="lib/physics/vectortools.js"></script>
+		<script src="lib/physics/closedshape.js"></script>
+		<script src="lib/physics/body.js"></script>
+		<script src="lib/physics/bodycollisioninfo.js"></script>
+		<script src="lib/physics/materialmanager.js"></script>
+		<script src="lib/physics/world.js"></script>
+		<script src="lib/physics/springbody.js"></script>
+		<script src="lib/physics/pressurebody.js"></script>
+		<script src="lib/physics/ray.js"></script>
+		<script src="lib/physics/bodybuilder.js"></script>
+		<script src="lib/physics/bodyblueprint.js"></script>
+		<script src="lib/physics/bodyfactory.js"></script>
+		<script src="lib/physics/particle.js"></script>
+		<script src="lib/physics/particlecannon.js"></script>
+		<script src="lib/physics/joints/distancejoint.js"></script>
+		<script src="lib/physics/joints/pinjoint.js"></script>
+		<script src="lib/physics/joints/interpolationjoint.js"></script>
+		<script src="lib/physics/springbuilder.js"></script>
+		<script src="lib/physics/contactmanager.js"></script>
+		<script src="lib/physics/quadtree.js"></script>
+		<script src="lib/physics/triggerfield.js"></script>
+		<script type="text/javascript">
+			var jelloClasses = [
+				"AABB",
+				"TriggerField",
+				//BitMask",
+				"BodyBluePrint",
+				"BodyFactory",
+				"Body",
+				"SpringBody",
+				"PressureBody",
+				//"BodyCollisionInfo",
+				"ClosedShape",
+				//"Contact",
+				//"ContactManager",
+				"InternalSpring",
+				"CollisionCallback",
+				"Material",
+				"ParticleCannon",
+				"Ray",
+				"Vector2",
+				"VectorTools",
+				"World",
+				"DistanceJoint",
+				"InterpolationJoint",
+				"PinJoint"
+			];
+			window.Jello = {};
+			for(var jelloClassIndex in jelloClasses) {
+				window.Jello[jelloClasses[jelloClassIndex]] = window[jelloClasses[jelloClassIndex]];
+			};
+		</script>
 		
 		<script src="lib/editor/editor.js"></script>
 	</head>
