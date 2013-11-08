@@ -148,6 +148,8 @@ class HTTPHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 files = [f for f in files if os.path.splitext(f)[1] in SETTINGS['image-types']]
             elif 'scripts' in types:
                 files = [f for f in files if os.path.splitext(f)[1] == '.js']
+            elif 'json' in types:
+                files = [f for f in files if os.path.splitext(f)[1] == '.json']
 
         if os.name == 'nt':
             files = [f.replace('\\', '/') for f in files]
