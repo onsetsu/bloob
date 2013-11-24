@@ -78,7 +78,9 @@
 			];
 			window.Jello = {};
 			for(var jelloClassIndex in jelloClasses) {
-				window.Jello[jelloClasses[jelloClassIndex]] = window[jelloClasses[jelloClassIndex]];
+				if(jelloClasses.hasOwnProperty(jelloClassIndex)) {
+					window.Jello[jelloClasses[jelloClassIndex]] = window[jelloClasses[jelloClassIndex]];
+				}
 			};
 		</script>
 		
