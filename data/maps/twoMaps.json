@@ -154,6 +154,59 @@
          }
       },
       {
+         "name":"menu",
+		"zIndex":0,
+		"scrollFactor":{
+			"x":0,
+			"y":0
+		},
+		"scale":{
+			"x":1,
+			"y":1
+		},
+          "world":{
+            "bodies":{
+               "body0":{
+                  "class":"Body",
+                  "shape":[
+                     {
+                        "x":-1,
+                        "y":-1
+                     },
+                     {
+                        "x":-1,
+                        "y":1
+                     },
+                     {
+                        "x":1,
+                        "y":1
+                     },
+                     {
+                        "x":1,
+                        "y":-1
+                     }
+                  ],
+                  "pointMasses":[
+                     0,
+                     0,
+                     0,
+                     0
+                  ],
+                  "translate":{
+                     "x":10,
+                     "y":20
+                  },
+                  "rotate":0,
+                  "scale":{
+                     "x":9,
+                     "y":1.5
+                  },
+                  "isKinematic":false
+               }
+            }
+         }
+      },
+      {
          "name":"0.4",
 		"zIndex":-1,
 		"scrollFactor":{
