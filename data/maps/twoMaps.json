@@ -8,7 +8,8 @@
    "layers":[
       {
 		"name":"additional",
-		"zIndex":-1,
+        "entities": [],
+        "zIndex":-1,
 		"scrollFactor":{
 			"x":0.9,
 			"y":0.9
@@ -17,9 +18,14 @@
 			"x":1,
 			"y":1
 		},
-        "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -55,8 +61,15 @@
                      "y":1.5
                   },
                   "isKinematic":false
-               },
-               "body1":{
+               }
+          },
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -92,8 +105,15 @@
                      "y":1.5
                   },
                   "isKinematic":false
-               },
-               "body2":{
+               }
+          },
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"SpringBody",
                   "shape":[
                      {
@@ -125,8 +145,8 @@
                   },
                   "rotate":0,
                   "scale":{
-                     "x":1,
-                     "y":1
+                     "x":2,
+                     "y":2
                   },
                   "isKinematic":false,
                   "edgeSpringK":300,
@@ -150,6 +170,10 @@
                      }
                   ]
                }
+          }
+		],
+        "world":{
+            "bodies":{
             }
          }
       },
@@ -164,9 +188,14 @@
 			"x":1,
 			"y":1
 		},
-          "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -203,6 +232,10 @@
                   },
                   "isKinematic":false
                }
+          }
+		],
+          "world":{
+            "bodies":{
             }
          }
       },
@@ -217,9 +250,14 @@
 			"x":0.4,
 			"y":0.4
 		},
-          "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -256,6 +294,10 @@
                   },
                   "isKinematic":false
                }
+          }
+		],
+          "world":{
+            "bodies":{
             }
          }
       },
@@ -270,9 +312,14 @@
 			"x":0.6,
 			"y":0.6
 		},
-          "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -309,11 +356,15 @@
                   },
                   "isKinematic":false
                }
+          }
+		],
+          "world":{
+            "bodies":{
             }
          }
       },
       {
-         "name":"0.8",
+        "name":"0.8",
 		"zIndex":-1,
 		"scrollFactor":{
 			"x":0.8,
@@ -323,9 +374,14 @@
 			"x":0.8,
 			"y":0.8
 		},
-          "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -362,7 +418,10 @@
                   },
                   "isKinematic":false
                }
-            }
+          }
+		],
+          "world":{
+            "bodies":{}
          }
       },
       {
@@ -376,9 +435,14 @@
 			"x":1,
 			"y":1
 		},
-          "world":{
-            "bodies":{
-               "body0":{
+        "entities": [
+        {
+            "name": "block",
+            "zIndex": 0,
+            "state": "idle",
+            "tags": [],
+            "stateAnimations": {},
+            "body": {
                   "class":"Body",
                   "shape":[
                      {
@@ -415,7 +479,10 @@
                   },
                   "isKinematic":false
                }
-            }
+          }
+		],
+          "world": {
+            "bodies": {}
          }
       }
    ]
