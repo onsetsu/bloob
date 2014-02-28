@@ -22,7 +22,9 @@
 		<script src="lib/external/libraryextensions.js"></script>
 		
 		<!-- TODO: Include compiled Jello library -->
+		<script src="lib/physics/jellyphysics.js"></script>
 		<script src="lib/physics/queue.js"></script>
+		<script src="lib/physics/objectpool.js"></script>
 		<script src="lib/physics/bitmask.js"></script>
 		<script src="lib/physics/collisiontype.js"></script>
 		<script src="lib/physics/internalspring.js"></script>
@@ -77,7 +79,8 @@
 				"DistanceJoint",
 				"InterpolationJoint",
 				"PinJoint",
-				"Queue"
+				"Queue",
+				"ObjectPool"
 			];
 			window.Jello = {};
 			for(var jelloClassIndex in jelloClasses) {
