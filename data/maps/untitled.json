@@ -8,6 +8,58 @@
   },
   "layers": [
     {
+      "name": "fluid",
+      "entities": [
+        {
+          "name": "block",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": -70,
+              "y": 40
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 10,
+              "y": 10
+            },
+            "isKinematic": false
+          }
+        }
+      ],
+      "world": {
+        "bodies": {}
+      }
+    },
+    {
       "name": "additional",
       "entities": [
         {
@@ -87,7 +139,7 @@
               0
             ],
             "translate": {
-              "x": -20.000000000000004,
+              "x": -20,
               "y": 1.5
             },
             "rotate": -0.23605640993671242,
@@ -131,10 +183,10 @@
               1
             ],
             "translate": {
-              "x": -0.616193181658248,
-              "y": 2.7894992685808595
+              "x": -0.6631432129666764,
+              "y": 2.7921012755638985
             },
-            "rotate": 0.6126540544561053,
+            "rotate": 0.5686536463867442,
             "scale": {
               "x": 2,
               "y": 2
@@ -326,6 +378,129 @@
     {
       "name": "main",
       "entities": [
+        {
+          "name": "controllableBlob",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "PressureBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": 3.700743415417188e-17
+              },
+              {
+                "x": 0.9396926207859083,
+                "y": -0.34202014332566866
+              },
+              {
+                "x": 0.766044443118978,
+                "y": -0.6427876096865393
+              },
+              {
+                "x": 0.5,
+                "y": -0.8660254037844386
+              },
+              {
+                "x": 0.17364817766693033,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.1736481776669303,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.4999999999999997,
+                "y": -0.8660254037844389
+              },
+              {
+                "x": -0.7660444431189779,
+                "y": -0.6427876096865395
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": -0.34202014332566877
+              },
+              {
+                "x": -1,
+                "y": -8.545724572767093e-17
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": 0.3420201433256686
+              },
+              {
+                "x": -0.766044443118978,
+                "y": 0.6427876096865393
+              },
+              {
+                "x": -0.5000000000000006,
+                "y": 0.8660254037844385
+              },
+              {
+                "x": -0.17364817766693033,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.17364817766692994,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.5000000000000001,
+                "y": 0.8660254037844387
+              },
+              {
+                "x": 0.7660444431189779,
+                "y": 0.6427876096865395
+              },
+              {
+                "x": 0.9396926207859084,
+                "y": 0.3420201433256686
+              }
+            ],
+            "pointMasses": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": -38.38117379090451,
+              "y": -0.394792916168727
+            },
+            "rotate": -0.8379962026060548,
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "isKinematic": false,
+            "edgeSpringK": 300,
+            "edgeSpringDamp": 20,
+            "shapeSpringK": 150,
+            "shapeSpringDamp": 1,
+            "internalSprings": [],
+            "gasPressure": 100
+          },
+          "trait": {
+            "path": "showcase/controllableblob"
+          }
+        },
         {
           "name": "testBlock",
           "zIndex": 0,
@@ -720,10 +895,10 @@
               1
             ],
             "translate": {
-              "x": -67.3895929260475,
-              "y": 26.095071218673993
+              "x": -68.3289507475359,
+              "y": 25.2782505870349
             },
-            "rotate": -0.67487365145151,
+            "rotate": -0.2777049136724224,
             "scale": {
               "x": 4,
               "y": 4
@@ -734,7 +909,7 @@
             "shapeSpringK": 500,
             "shapeSpringDamp": 20,
             "internalSprings": [],
-            "gasPressure": 2328
+            "gasPressure": 253
           },
           "trait": {
             "path": "showcase/blowup"
@@ -790,10 +965,10 @@
               1
             ],
             "translate": {
-              "x": -15.0112778064338,
-              "y": 17.400656404531002
+              "x": -14.942413068634096,
+              "y": 18.50436046062778
             },
-            "rotate": -0.7842723440904695,
+            "rotate": -0.08640678902907847,
             "scale": {
               "x": 2,
               "y": 2
@@ -887,7 +1062,7 @@
               0
             ],
             "translate": {
-              "x": -74.49999999999952,
+              "x": -67.19999999999968,
               "y": 0
             },
             "rotate": 0,
@@ -908,6 +1083,501 @@
           }
         },
         {
+          "name": "roundGround",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 8.933516235304685,
+                "y": 15
+              },
+              {
+                "x": 3.8032140854196603,
+                "y": 14.095389311788626
+              },
+              {
+                "x": -0.7082979099934033,
+                "y": 11.490666646784668
+              },
+              {
+                "x": -4.05686482146189,
+                "y": 7.5
+              },
+              {
+                "x": -5.8386000598784324,
+                "y": 2.6047226650039548
+              },
+              {
+                "x": -5.8386000598784324,
+                "y": -2.604722665003954
+              },
+              {
+                "x": -4.056864821461893,
+                "y": -7.5
+              },
+              {
+                "x": -0.7082979099933997,
+                "y": -11.49066664678467
+              },
+              {
+                "x": 3.8032140854196577,
+                "y": -14.095389311788626
+              },
+              {
+                "x": 8.933516235304689,
+                "y": -15
+              },
+              {
+                "x": 8.933516235304689,
+                "y": -20
+              },
+              {
+                "x": -11.066483764695311,
+                "y": -20
+              },
+              {
+                "x": -11.066483764695311,
+                "y": 20
+              },
+              {
+                "x": 8.933516235304689,
+                "y": 20
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": -75,
+              "y": 23
+            },
+            "rotate": 1.5707963267948968,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "ground",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "SpringBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": -1
+              },
+              {
+                "x": 0.75,
+                "y": -1
+              },
+              {
+                "x": 0.5,
+                "y": -1
+              },
+              {
+                "x": 0.25,
+                "y": -1
+              },
+              {
+                "x": 0,
+                "y": -1
+              },
+              {
+                "x": -0.25,
+                "y": -1
+              },
+              {
+                "x": -0.5,
+                "y": -1
+              },
+              {
+                "x": -0.75,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": -0.75,
+                "y": 1
+              },
+              {
+                "x": -0.5,
+                "y": 1
+              },
+              {
+                "x": -0.25,
+                "y": 1
+              },
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 0.25,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.75,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": -49.99999999997307,
+              "y": -16.009862695648202
+            },
+            "rotate": -8.291971060398534e-10,
+            "scale": {
+              "x": 18,
+              "y": 3
+            },
+            "isKinematic": false,
+            "edgeSpringK": 150,
+            "edgeSpringDamp": 5,
+            "shapeSpringK": 10,
+            "shapeSpringDamp": 5,
+            "internalSprings": [
+              {
+                "pointA": 1,
+                "pointB": 16,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 2,
+                "pointB": 15,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 3,
+                "pointB": 14,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 4,
+                "pointB": 13,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 5,
+                "pointB": 12,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 6,
+                "pointB": 11,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 7,
+                "pointB": 10,
+                "springD": 6,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 1,
+                "pointB": 17,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 2,
+                "pointB": 16,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 3,
+                "pointB": 15,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 4,
+                "pointB": 14,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 5,
+                "pointB": 13,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 6,
+                "pointB": 12,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 7,
+                "pointB": 11,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 8,
+                "pointB": 10,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 0,
+                "pointB": 16,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 1,
+                "pointB": 15,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 2,
+                "pointB": 14,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 3,
+                "pointB": 13,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 4,
+                "pointB": 12,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 5,
+                "pointB": 11,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 6,
+                "pointB": 10,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              },
+              {
+                "pointA": 7,
+                "pointB": 9,
+                "springD": 7.5,
+                "springK": 300,
+                "damping": 10
+              }
+            ]
+          }
+        },
+        {
+          "name": "ground",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "PressureBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": -1
+              },
+              {
+                "x": 0.75,
+                "y": -1
+              },
+              {
+                "x": 0.5,
+                "y": -1
+              },
+              {
+                "x": 0.25,
+                "y": -1
+              },
+              {
+                "x": 0,
+                "y": -1
+              },
+              {
+                "x": -0.25,
+                "y": -1
+              },
+              {
+                "x": -0.5,
+                "y": -1
+              },
+              {
+                "x": -0.75,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": -0.75,
+                "y": 1
+              },
+              {
+                "x": -0.5,
+                "y": 1
+              },
+              {
+                "x": -0.25,
+                "y": 1
+              },
+              {
+                "x": 0,
+                "y": 1
+              },
+              {
+                "x": 0.25,
+                "y": 1
+              },
+              {
+                "x": 0.5,
+                "y": 1
+              },
+              {
+                "x": 0.75,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": -89.93831471881617,
+              "y": -15.906669172035306
+            },
+            "rotate": 0.0017199419687566391,
+            "scale": {
+              "x": 18,
+              "y": 3
+            },
+            "isKinematic": false,
+            "edgeSpringK": 150,
+            "edgeSpringDamp": 5,
+            "shapeSpringK": 300,
+            "shapeSpringDamp": 5,
+            "internalSprings": [],
+            "gasPressure": 300
+          }
+        },
+        {
           "name": "jellyCrate",
           "zIndex": 0,
           "state": "idle",
@@ -987,10 +1657,10 @@
               1
             ],
             "translate": {
-              "x": 48.404044858758525,
-              "y": 45.13452185280603
+              "x": 48.29879404231077,
+              "y": 44.98703502289971
             },
-            "rotate": -0.010946559548515401,
+            "rotate": 0.07253530175520298,
             "scale": {
               "x": 1,
               "y": 1
@@ -1098,10 +1768,10 @@
               1
             ],
             "translate": {
-              "x": 46.23634524931512,
-              "y": 45.63237108552344
+              "x": 46.79322672909618,
+              "y": 46.67577246616455
             },
-            "rotate": 1.2334717392645067,
+            "rotate": 0.48490905852467,
             "scale": {
               "x": 1,
               "y": 1
@@ -1209,10 +1879,10 @@
               1
             ],
             "translate": {
-              "x": 44.35437457795061,
-              "y": 46.315216621671105
+              "x": 45.86543063995219,
+              "y": 48.353266386609576
             },
-            "rotate": 1.2174798534003966,
+            "rotate": 0.43370850748940676,
             "scale": {
               "x": 1,
               "y": 1
@@ -1320,10 +1990,10 @@
               1
             ],
             "translate": {
-              "x": 46.44247890958431,
-              "y": 47.65832215677896
+              "x": 49.18650796332518,
+              "y": 51.563221162995625
             },
-            "rotate": 1.2399354318931495,
+            "rotate": -0.4071426004365779,
             "scale": {
               "x": 1,
               "y": 1
@@ -1431,10 +2101,10 @@
               1
             ],
             "translate": {
-              "x": 50.37661901485147,
-              "y": 45.147869915428046
+              "x": 50.695476026725,
+              "y": 45.15696244536204
             },
-            "rotate": 0.01535056933973019,
+            "rotate": -0.008985186281613884,
             "scale": {
               "x": 1,
               "y": 1
@@ -1542,10 +2212,10 @@
               1
             ],
             "translate": {
-              "x": 50.377582916865684,
-              "y": 45.14817275598075
+              "x": 50.4040173932142,
+              "y": 45.72510274817105
             },
-            "rotate": 0.014070507648519127,
+            "rotate": 0.7398688046400239,
             "scale": {
               "x": 1,
               "y": 1
@@ -1653,10 +2323,10 @@
               1
             ],
             "translate": {
-              "x": 48.53109524059947,
-              "y": 47.156619872589616
+              "x": 49.67521860904059,
+              "y": 48.18802876160228
             },
-            "rotate": -0.12953238074006432,
+            "rotate": -0.1775380895103737,
             "scale": {
               "x": 1,
               "y": 1
@@ -1764,10 +2434,10 @@
               1
             ],
             "translate": {
-              "x": 51.626709857031386,
-              "y": 47.24849379314398
+              "x": 51.461383026452324,
+              "y": 50.079726637552895
             },
-            "rotate": -1.418763012421563,
+            "rotate": -0.9532615992013033,
             "scale": {
               "x": 1,
               "y": 1
@@ -1875,10 +2545,10 @@
               1
             ],
             "translate": {
-              "x": 52.44289814788035,
-              "y": 45.320330991655545
+              "x": 53.03626826007246,
+              "y": 45.38808142470349
             },
-            "rotate": 0.18140181930405386,
+            "rotate": 0.36835543416781236,
             "scale": {
               "x": 1,
               "y": 1
@@ -1986,10 +2656,10 @@
               1
             ],
             "translate": {
-              "x": 52.44510667625548,
-              "y": 45.32030150304557
+              "x": 52.91775587477434,
+              "y": 45.742241481648705
             },
-            "rotate": 0.18243977287239987,
+            "rotate": -0.32086032735738856,
             "scale": {
               "x": 1,
               "y": 1
@@ -2097,10 +2767,10 @@
               1
             ],
             "translate": {
-              "x": 53.70319821165485,
-              "y": 47.71925399951499
+              "x": 53.426935763341824,
+              "y": 47.81158929904561
             },
-            "rotate": 0.3407144978062213,
+            "rotate": -0.45072491500986256,
             "scale": {
               "x": 1,
               "y": 1
@@ -2208,10 +2878,10 @@
               1
             ],
             "translate": {
-              "x": 55.55155615021787,
-              "y": 48.38565991640813
+              "x": 55.81978014391705,
+              "y": 49.49075306626975
             },
-            "rotate": 0.33912869838314164,
+            "rotate": -1.5044974056943283,
             "scale": {
               "x": 1,
               "y": 1
@@ -2319,10 +2989,10 @@
               1
             ],
             "translate": {
-              "x": 54.39791552738605,
-              "y": 45.86343934567172
+              "x": 55.31386168498818,
+              "y": 46.15495408529319
             },
-            "rotate": 0.3306881548710545,
+            "rotate": 0.31740342628563367,
             "scale": {
               "x": 1,
               "y": 1
@@ -2430,10 +3100,10 @@
               1
             ],
             "translate": {
-              "x": 56.239274174735,
-              "y": 46.529024694926854
+              "x": 57.32797256229908,
+              "y": 47.412058146481286
             },
-            "rotate": -1.223770022663853,
+            "rotate": -0.46757391840748996,
             "scale": {
               "x": 1,
               "y": 1
@@ -2541,10 +3211,10 @@
               1
             ],
             "translate": {
-              "x": 58.1015967780953,
-              "y": 47.74316471865967
+              "x": 59.24747674699381,
+              "y": 50.7104313681363
             },
-            "rotate": -0.8863179827612201,
+            "rotate": -0.527944242343342,
             "scale": {
               "x": 1,
               "y": 1
@@ -2652,10 +3322,10 @@
               1
             ],
             "translate": {
-              "x": 59.61394544990891,
-              "y": 49.01581410392924
+              "x": 60.53786969019291,
+              "y": 53.77778980542171
             },
-            "rotate": -0.8727188077140702,
+            "rotate": -0.47322331773371706,
             "scale": {
               "x": 1,
               "y": 1
@@ -2763,10 +3433,10 @@
               1
             ],
             "translate": {
-              "x": 8.076606824068383,
-              "y": 7.623388051855006
+              "x": 11.997403459667876,
+              "y": 5.4661021464574855
             },
-            "rotate": -2.83139509688112,
+            "rotate": 0.30377335108883907,
             "scale": {
               "x": 1,
               "y": 1
@@ -2798,7 +3468,51 @@
           }
         },
         {
-          "name": "firefly",
+          "name": "materialGround0",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": 50,
+              "y": 0
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 6,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle0",
           "zIndex": 0,
           "state": "idle",
           "tags": [],
@@ -2815,8 +3529,972 @@
               1
             ],
             "translate": {
-              "x": 148.25008476821824,
-              "y": 74.78999181189829
+              "x": 45.75,
+              "y": 1.001
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle1",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 48.75,
+              "y": 1.001
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle2",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 51.75,
+              "y": 1.0367417036311122
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle3",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 54.75,
+              "y": 2.2310718597113786
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialGround1",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": 62,
+              "y": 0
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 6,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle0",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 57.75,
+              "y": 1.001
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle1",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 60.75,
+              "y": 1.0367417036311122
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle2",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 63.75,
+              "y": 2.2310718597113786
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle3",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 66.75,
+              "y": 4.015080327648422
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialGround2",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": 74,
+              "y": 0
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 6,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle0",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 69.75,
+              "y": 1.0367417036311122
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle1",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 72.75,
+              "y": 2.2310718597113786
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle2",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 75.75,
+              "y": 4.015080327648422
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle3",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 78.75,
+              "y": 5.799088795585462
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialGround3",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "translate": {
+              "x": 86,
+              "y": 0
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 6,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle0",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 81.75,
+              "y": 2.2310718597113786
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle1",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 84.75,
+              "y": 4.015080327648422
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle2",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 87.75,
+              "y": 5.799088795585462
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "materialParticle3",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 90.75,
+              "y": 7.5830972635224985
+            },
+            "rotate": 1.5707963267948966,
+            "scale": {
+              "x": 1,
+              "y": 1
+            },
+            "isKinematic": false
+          }
+        },
+        {
+          "name": "Blob",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "PressureBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": 3.700743415417188e-17
+              },
+              {
+                "x": 0.9396926207859083,
+                "y": -0.34202014332566866
+              },
+              {
+                "x": 0.766044443118978,
+                "y": -0.6427876096865393
+              },
+              {
+                "x": 0.5,
+                "y": -0.8660254037844386
+              },
+              {
+                "x": 0.17364817766693033,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.1736481776669303,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.4999999999999997,
+                "y": -0.8660254037844389
+              },
+              {
+                "x": -0.7660444431189779,
+                "y": -0.6427876096865395
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": -0.34202014332566877
+              },
+              {
+                "x": -1,
+                "y": -8.545724572767093e-17
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": 0.3420201433256686
+              },
+              {
+                "x": -0.766044443118978,
+                "y": 0.6427876096865393
+              },
+              {
+                "x": -0.5000000000000006,
+                "y": 0.8660254037844385
+              },
+              {
+                "x": -0.17364817766693033,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.17364817766692994,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.5000000000000001,
+                "y": 0.8660254037844387
+              },
+              {
+                "x": 0.7660444431189779,
+                "y": 0.6427876096865395
+              },
+              {
+                "x": 0.9396926207859084,
+                "y": 0.3420201433256686
+              }
+            ],
+            "pointMasses": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": 202.1509779107872,
+              "y": 46.96916759743579
+            },
+            "rotate": 0.46702995650131135,
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "isKinematic": false,
+            "edgeSpringK": 300,
+            "edgeSpringDamp": 20,
+            "shapeSpringK": 10,
+            "shapeSpringDamp": 1,
+            "internalSprings": [],
+            "gasPressure": 160
+          }
+        },
+        {
+          "name": "Blob",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "PressureBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": 3.700743415417188e-17
+              },
+              {
+                "x": 0.9396926207859083,
+                "y": -0.34202014332566866
+              },
+              {
+                "x": 0.766044443118978,
+                "y": -0.6427876096865393
+              },
+              {
+                "x": 0.5,
+                "y": -0.8660254037844386
+              },
+              {
+                "x": 0.17364817766693033,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.1736481776669303,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.4999999999999997,
+                "y": -0.8660254037844389
+              },
+              {
+                "x": -0.7660444431189779,
+                "y": -0.6427876096865395
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": -0.34202014332566877
+              },
+              {
+                "x": -1,
+                "y": -8.545724572767093e-17
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": 0.3420201433256686
+              },
+              {
+                "x": -0.766044443118978,
+                "y": 0.6427876096865393
+              },
+              {
+                "x": -0.5000000000000006,
+                "y": 0.8660254037844385
+              },
+              {
+                "x": -0.17364817766693033,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.17364817766692994,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.5000000000000001,
+                "y": 0.8660254037844387
+              },
+              {
+                "x": 0.7660444431189779,
+                "y": 0.6427876096865395
+              },
+              {
+                "x": 0.9396926207859084,
+                "y": 0.3420201433256686
+              }
+            ],
+            "pointMasses": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": 216.98105123325,
+              "y": 63.56138076135918
+            },
+            "rotate": -0.07978837561164466,
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "isKinematic": false,
+            "edgeSpringK": 300,
+            "edgeSpringDamp": 20,
+            "shapeSpringK": 10,
+            "shapeSpringDamp": 1,
+            "internalSprings": [],
+            "gasPressure": 260
+          }
+        },
+        {
+          "name": "stickyBlob",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "PressureBody",
+            "shape": [
+              {
+                "x": 1,
+                "y": 3.700743415417188e-17
+              },
+              {
+                "x": 0.9396926207859083,
+                "y": -0.34202014332566866
+              },
+              {
+                "x": 0.766044443118978,
+                "y": -0.6427876096865393
+              },
+              {
+                "x": 0.5,
+                "y": -0.8660254037844386
+              },
+              {
+                "x": 0.17364817766693033,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.1736481776669303,
+                "y": -0.984807753012208
+              },
+              {
+                "x": -0.4999999999999997,
+                "y": -0.8660254037844389
+              },
+              {
+                "x": -0.7660444431189779,
+                "y": -0.6427876096865395
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": -0.34202014332566877
+              },
+              {
+                "x": -1,
+                "y": -8.545724572767093e-17
+              },
+              {
+                "x": -0.9396926207859083,
+                "y": 0.3420201433256686
+              },
+              {
+                "x": -0.766044443118978,
+                "y": 0.6427876096865393
+              },
+              {
+                "x": -0.5000000000000006,
+                "y": 0.8660254037844385
+              },
+              {
+                "x": -0.17364817766693033,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.17364817766692994,
+                "y": 0.984807753012208
+              },
+              {
+                "x": 0.5000000000000001,
+                "y": 0.8660254037844387
+              },
+              {
+                "x": 0.7660444431189779,
+                "y": 0.6427876096865395
+              },
+              {
+                "x": 0.9396926207859084,
+                "y": 0.3420201433256686
+              }
+            ],
+            "pointMasses": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": -54.76813016888342,
+              "y": 6.14666518931008
+            },
+            "rotate": -0.11621210823630397,
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "isKinematic": false,
+            "edgeSpringK": 300,
+            "edgeSpringDamp": 20,
+            "shapeSpringK": 10,
+            "shapeSpringDamp": 1,
+            "internalSprings": [],
+            "gasPressure": 100
+          },
+          "trait": {
+            "path": "showcase/stickiness"
+          }
+        },
+        {
+          "name": "firefly",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "pointMasses": [
+              1
+            ],
+            "translate": {
+              "x": 150.12607969935377,
+              "y": 66.3197661164854
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2835,6 +4513,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -2847,8 +4530,8 @@
               1
             ],
             "translate": {
-              "x": 140.09308354970696,
-              "y": 64.7182144341723
+              "x": 151.01092009736666,
+              "y": 67.29501296253062
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2867,6 +4550,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -2879,8 +4567,8 @@
               1
             ],
             "translate": {
-              "x": 148.19923628702205,
-              "y": 76.78364317304758
+              "x": 151.49221386737523,
+              "y": 68.1572707861263
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2899,6 +4587,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -2911,8 +4604,8 @@
               1
             ],
             "translate": {
-              "x": 141.82683600292376,
-              "y": 73.60499911810481
+              "x": 150.5650721776392,
+              "y": 69.33742632597628
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2931,6 +4624,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -2943,8 +4641,8 @@
               1
             ],
             "translate": {
-              "x": 144.89211746138108,
-              "y": 72.78230039785824
+              "x": 150.4439976868774,
+              "y": 66.24116826276564
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2963,6 +4661,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -2975,8 +4678,8 @@
               1
             ],
             "translate": {
-              "x": 141.09191771750972,
-              "y": 66.89189489128741
+              "x": 151.39066237927457,
+              "y": 67.03496926223588
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -2995,6 +4698,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3007,8 +4715,8 @@
               1
             ],
             "translate": {
-              "x": 148.42971174876413,
-              "y": 76.58748864712176
+              "x": 151.6798979787803,
+              "y": 67.8836564356769
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3027,6 +4735,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3039,8 +4752,8 @@
               1
             ],
             "translate": {
-              "x": 145.03276008610422,
-              "y": 75.90208826771442
+              "x": 150.70216816798097,
+              "y": 70.10450395193426
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3059,6 +4772,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3071,8 +4789,8 @@
               1
             ],
             "translate": {
-              "x": 143.8175024582127,
-              "y": 70.55224152089541
+              "x": 151.6933666674592,
+              "y": 66.0136331515373
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3091,6 +4809,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3103,8 +4826,8 @@
               1
             ],
             "translate": {
-              "x": 142.0867291082534,
-              "y": 64.65576116292956
+              "x": 152.86628899528785,
+              "y": 66.8691421989942
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3123,6 +4846,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3135,8 +4863,8 @@
               1
             ],
             "translate": {
-              "x": 143.9715809139922,
-              "y": 72.80493840156389
+              "x": 153.3904198220735,
+              "y": 68.42686579055723
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3155,6 +4883,11 @@
           "state": "idle",
           "tags": [],
           "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "fireflysmall"
+            }
+          ],
           "body": {
             "class": "Body",
             "shape": [
@@ -3167,8 +4900,8 @@
               1
             ],
             "translate": {
-              "x": 142.29205114885067,
-              "y": 70.2372423168687
+              "x": 152.77799847747093,
+              "y": 69.76933355268174
             },
             "rotate": 1.5707963267948966,
             "scale": {
@@ -3180,6 +4913,18 @@
           "trait": {
             "path": "showcase/firefly"
           }
+        },
+        {
+          "name": "vectorgraphics",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "drawCallbacks": [
+            {
+              "path": "vectorgraphics"
+            }
+          ]
         },
         {
           "name": "block",
