@@ -1,0 +1,63 @@
+{
+  "name": "title",
+  "spawnPoints": {
+    "default": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "layers": [
+    {
+      "name": "title",
+      "entities": [
+        {
+          "name": "block",
+          "zIndex": 0,
+          "state": "idle",
+          "tags": [],
+          "stateAnimations": {},
+          "body": {
+            "class": "Body",
+            "shape": [
+              {
+                "x": -1,
+                "y": -1
+              },
+              {
+                "x": -1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": 1
+              },
+              {
+                "x": 1,
+                "y": -1
+              }
+            ],
+            "pointMasses": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "translate": {
+              "x": 0,
+              "y": 0
+            },
+            "rotate": 0,
+            "scale": {
+              "x": 10,
+              "y": 10
+            },
+            "isKinematic": false
+          }
+        }
+      ],
+      "world": {
+        "bodies": {}
+      }
+    }
+  ]
+}
