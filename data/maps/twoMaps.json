@@ -241,7 +241,7 @@
          }
       },
       {
-         "name":"menu",
+         "name":"gui",
 		"zIndex":0,
 		"scrollFactor":{
 			"x":0,
