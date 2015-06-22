@@ -19,7 +19,8 @@ var stylish = require('jshint-stylish');
 gulp.task('lint', function () {
   return gulp.src('gulpfile.js')
     .pipe(jshint()) // '.jshintrc'
-    .pipe(jshint.reporter('jshint-stylish'));
+    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('default', ['lint']);
