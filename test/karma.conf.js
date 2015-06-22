@@ -4,13 +4,6 @@ module.exports = function (config) {
 		autoWatch : true,
 		frameworks: ['jasmine'],
 		browsers : ['PhantomJS'],
-		plugins : [
-			'karma-spec-reporter',
-			'karma-phantomjs-launcher',
-			'karma-jasmine',
-			'karma-coverage',
-			'karma-htmlfile-reporter'
-		],
 		reporters : ['spec', 'coverage', 'html'],
 		preprocessors: {
 			'../src/js/**/*.js': 'coverage'
@@ -21,6 +14,14 @@ module.exports = function (config) {
 		},
 		htmlReporter: {
 			outputFile: 'results/unit-tests.html'
-		}
+		},
+		singleRun: true,
+		plugins : [
+			'karma-spec-reporter',
+			'karma-phantomjs-launcher',
+			'karma-jasmine',
+			'karma-coverage',
+			'karma-htmlfile-reporter'
+		]
 	});
 };
