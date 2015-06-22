@@ -9,6 +9,7 @@
 		"jsdoc": "^3.3.2",
 		"gulp-git": "^1.2.4",
 		"karma": "^0.12.0",
-		"gulp-karma": "^0.0.4"
+		"gulp-karma": "^0.0.4",
+		"karma-jasmine": "^0.2.0"
 	}
 }
