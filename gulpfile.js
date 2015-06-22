@@ -2,7 +2,9 @@ var gulp = require('gulp');
 
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
-          
+
+var shell = require('gulp-shell');
+
 gulp.task('lint', function () {
   return gulp.src('gulpfile.js')
     .pipe(jshint())
@@ -10,4 +12,6 @@ gulp.task('lint', function () {
     .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('default', ['lint']);
+gulp.task('jsdoc', shell.task(['./node_modules/jsdoc/jsdoc .']));
+
+gulp.task('default', ['lint', 'jsdoc']);
