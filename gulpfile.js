@@ -15,10 +15,10 @@ gulp.task('lint', function () {
 });
 
 // Run unit tests
-gulp.task('test:scripts', function() {
+gulp.task('test', function() {
   return gulp.src('./test/**/*.js')
     .pipe(karma({ configFile: 'karma.conf.js' }))
     .on('error', function(err) { throw err; });
 });
 
-gulp.task('default', ['lint']);
+gulp.task('default', ['lint', 'test']);
