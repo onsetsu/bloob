@@ -3,8 +3,8 @@ module.exports = function (config) {
 		basePath : '',
 		frameworks: ['jasmine'],
 	        files: [
-			'lib/**/*.js',
-			'test/spec/*.js'
+			'../lib/**/*.js',
+			'../test/spec/*.js'
 	        ],
 	        exclude: [
 			'test/karma.conf.js'
