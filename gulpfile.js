@@ -16,7 +16,7 @@ gulp.task('lint', function () {
 
 // Run unit tests
 gulp.task('test', function() {
-  return gulp.src('./**/*.js')
+  return gulp.src(['./lib/**/*.js', './test/**/*.js'])
     .pipe(karma({ configFile: 'test/karma.conf.js' }))
     .on('error', function(err) { throw err; });
 });
