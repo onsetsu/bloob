@@ -1,6 +1,6 @@
 module.exports = function (config) {
 	config.set({
-		basePath : './',
+		basePath : '.././',
 		frameworks: ['jasmine'],
 	        files: [
 			'lib/**/*.js',
@@ -12,11 +12,11 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-			'lib/**/*.js': 'coverage'
+			'lib/num/vector2.js': 'coverage'
 		},
 		coverageReporter: {
-			type : 'html',
-			dir : 'coverage/'
+			type : 'text'//,
+			//dir : 'coverage/'
 		},
 		htmlReporter: {
 			outputFile: 'results/unit-tests.html'
