@@ -12,6 +12,10 @@ gulp.task('lint', function () {
     'lib/assets/**/*.js',
     'lib/basic/**/*.js',
     'lib/behavior/**/*.js',
+    'lib/debug/**/*.js',
+    'lib/ecs/**/*.js',
+    'lib/editor/**/*.js',
+    'lib/engine/**/*.js',
     'lib/num/**/*.js'
   ])
     .pipe(jshint())
