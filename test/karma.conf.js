@@ -10,7 +10,7 @@ module.exports = function (config) {
 			'test/karma.conf.js'
 	        ],
 		browsers : ['PhantomJS'],
-		reporters : ['spec', 'coverage', 'html'],
+		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
 			'lib/**/*.js': 'coverage'
 		},
