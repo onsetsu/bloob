@@ -12,7 +12,7 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-			'../**/lib/sqr.js': 'coverage'
+			'../lib/**/*.js': 'coverage'
 		},
 		coverageReporter: {
 			type : 'text'//,
