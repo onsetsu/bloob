@@ -1,8 +1,14 @@
 module.exports = function (config) {
 	config.set({
-		basePath : '',
-		autoWatch : true,
+		basePath : './',
 		frameworks: ['jasmine'],
+	        files: [
+			//'lib/*.js',
+			'test/spec/*.js'
+	        ],
+	        exclude: [
+			'test/karma.conf.js'
+	        ],
 		browsers : ['PhantomJS'],
 		reporters : ['spec', 'coverage', 'html'],
 		preprocessors: {
