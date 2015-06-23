@@ -3,7 +3,7 @@ module.exports = function (config) {
 		basePath : './',
 		frameworks: ['jasmine'],
 	        files: [
-			'lib/*.js',
+			'lib/**/*.js',
 			'test/spec/*.js'
 	        ],
 	        exclude: [
@@ -12,7 +12,7 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['spec', 'coverage', 'html'],
 		preprocessors: {
-			'../src/js/**/*.js': 'coverage'
+			'lib/**/*.js': 'coverage'
 		},
 		coverageReporter: {
 			type : 'html',
