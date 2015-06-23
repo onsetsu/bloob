@@ -2,14 +2,14 @@ module.exports = function (config) {
 	config.set({
 		basePath : '',
 		frameworks: ['jasmine'],
-/*	        files: [
-			'../lib/**/*.js',
-			'../test/spec/*.js'
-	        ],
-	        exclude: [
-			'test/karma.conf.js'
-	        ],
-*/		browsers : ['PhantomJS'],
+//	        files: [
+//			'../lib/**/*.js',
+//			'../test/spec/*.js'
+//	        ],
+//	        exclude: [
+//			'test/karma.conf.js'
+//	        ],
+		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
 			'../lib/**/*.js': 'coverage'
