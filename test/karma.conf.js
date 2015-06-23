@@ -1,6 +1,6 @@
 module.exports = function (config) {
 	config.set({
-		basePath : './',
+		basePath : '',
 		frameworks: ['jasmine'],
 	        files: [
 			'lib/**/*.js',
@@ -12,7 +12,7 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-			'**/lib/sqr.js': 'coverage'
+			'../**/lib/sqr.js': 'coverage'
 		},
 		coverageReporter: {
 			type : 'text'//,
