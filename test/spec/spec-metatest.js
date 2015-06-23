@@ -10,6 +10,10 @@ describe('MetaTest', function () {
 		it('42 should be 42', function () {
 			expect(42).toBe(42);
 		});
+		
+		it('sqr should abs negative values', function() {
+			expect(sqr(-42)).toBe(42);
+		});
 
 	});
 
