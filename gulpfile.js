@@ -8,16 +8,7 @@ var stylish = require('jshint-stylish');
 var karma = require('gulp-karma');
 
 gulp.task('lint', function () {
-  return gulp.src([
-    'lib/assets/**/*.js',
-    'lib/basic/**/*.js',
-    'lib/behavior/**/*.js',
-    'lib/debug/**/*.js',
-    'lib/ecs/**/*.js',
-    'lib/editor/**/*.js',
-    'lib/engine/**/*.js',
-    'lib/num/**/*.js'
-  ])
+  return gulp.src('lib/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));
