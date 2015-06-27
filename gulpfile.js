@@ -5,6 +5,7 @@ var stylish = require('jshint-stylish');
 
 //var shell = require('gulp-shell');
 
+var karmaServer = require('karma').server;
 var karma = require('gulp-karma');
 
 gulp.task('lint', function () {
@@ -25,7 +26,7 @@ gulp.task('test', function(done) {
 //  )
 //    .pipe(karma({ configFile: 'test/karma.conf.js' }))
 //    .on('error', function(err) { throw err; });
-  karma.start({
+  karmaServer.start({
     configFile: 'test/karma.conf.js',
     singleRun: true
   }, done);
