@@ -13,10 +13,13 @@ require.config({
   baseUrl: '/base/lib',
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
+  /*
   paths: {
     'jquery': '../lib/jquery',
     'underscore': '../lib/underscore',
   },
+  */
+  /*
   packages: [
     {
       name: 'num',
@@ -29,13 +32,16 @@ require.config({
       main: 'jello'
     }
   ],
+  */
 
   // example of using a shim, to load non AMD libraries (such as underscore)
+  /*
   shim: {
     'underscore': {
       exports: '_'
     }
   },
+  */
 
   // dynamically load all test files
   deps: allTestFiles,

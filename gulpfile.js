@@ -18,7 +18,7 @@ gulp.task('lint', function () {
 gulp.task('test', function() {
   return gulp.src([
     //'./lib/external/require.js',
-    //'./test/**/*.js',
+    './test/**/*.js',
     './test/test-main.js'
   ])
     .pipe(karma({ configFile: 'test/karma.conf.js' }))
