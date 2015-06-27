@@ -5,7 +5,7 @@ module.exports = function (config) {
         files: [
 //			'../lib/**/*.js',
 //			'../test/spec/*.js'
-            'src/test/test-main.js',
+            'test-main.js',
             {pattern: '../lib/**/*.js', included: false},
             {pattern: '../test/spec/*.js', included: false}
         ],
@@ -22,6 +22,8 @@ module.exports = function (config) {
 			type : 'text'//,
 			//dir : 'coverage/'
 		},
+		colors: true,
+		logLevel: config.LOG_DEBUG,
 		htmlReporter: {
 			outputFile: 'results/unit-tests.html'
 		},
