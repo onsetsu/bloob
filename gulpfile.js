@@ -17,19 +17,19 @@ gulp.task('lint', function () {
 
 // Run unit tests
 gulp.task('test', function(done) {
-//  return gulp.src(
+  return gulp.src('./idontexist'
 //  [
 //    //'./lib/external/require.js',
 //    './test/**/*.js',
 //    './test/test-main.js'
 //  ]
-//  )
-//    .pipe(karma({ configFile: 'test/karma.conf.js' }))
-//    .on('error', function(err) { throw err; });
-  karmaServer.start({
-    configFile: 'test/karma.conf.js',
-    singleRun: true
-  }, done);
+  )
+    .pipe(karma({ configFile: 'test/karma.conf.js' }))
+    .on('error', function(err) { throw err; });
+//  karmaServer.start({
+//    configFile: 'test/karma.conf.js',
+//    singleRun: true
+//  }, done);
 });
 
 gulp.task('default', ['lint', 'test']);
