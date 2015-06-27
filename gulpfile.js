@@ -17,7 +17,7 @@ gulp.task('lint', function () {
 
 // Run unit tests
 gulp.task('test', function(done) {
-  return gulp.src(
+//  return gulp.src(
 //  [
 //    //'./lib/external/require.js',
 //    './test/**/*.js',
