@@ -10,13 +10,25 @@ Object.keys(window.__karma__.files).forEach(function(file) {
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base/src',
+  baseUrl: '/base/lib',
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
   paths: {
     'jquery': '../lib/jquery',
     'underscore': '../lib/underscore',
   },
+  packages: [
+    {
+      name: 'num',
+      location: 'num',
+      main: 'num'
+    },
+    {
+      name: 'jello',
+      location: 'physics',
+      main: 'jello'
+    }
+  ],
 
   // example of using a shim, to load non AMD libraries (such as underscore)
   shim: {
