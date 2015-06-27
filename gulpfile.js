@@ -18,8 +18,6 @@ gulp.task('lint', function () {
 gulp.task('test', function() {
   return gulp.src([
     './lib/external/require.js',
-    './lib/sqr.js',
-    './lib/sqrt.js',
     './test/**/*.js',
     './test/test-main.js'
   ])
