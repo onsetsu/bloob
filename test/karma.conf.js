@@ -5,9 +5,9 @@ module.exports = function (config) {
         files: [
 //			'../lib/**/*.js',
 //			'../test/spec/*.js'
-            'test-main.js',
+            {pattern: '../test/test-main.js', included: true},
+            {pattern: '../test/spec/*.js', included: false},
             {pattern: '../lib/**/*.js', included: false},
-            {pattern: '../test/spec/*.js', included: false}
         ],
         exclude: [
 			'lib/requireconfig.js',
@@ -23,7 +23,7 @@ module.exports = function (config) {
 			//dir : 'coverage/'
 		},
 		colors: true,
-		logLevel: config.LOG_DEBUG,
+		//logLevel: config.LOG_DEBUG,
 		htmlReporter: {
 			outputFile: 'results/unit-tests.html'
 		},
