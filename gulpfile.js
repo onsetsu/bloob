@@ -16,11 +16,13 @@ gulp.task('lint', function () {
 
 // Run unit tests
 gulp.task('test', function() {
-  return gulp.src([
-    //'./lib/external/require.js',
-    './test/**/*.js',
-    './test/test-main.js'
-  ])
+  return gulp.src(
+//  [
+//    //'./lib/external/require.js',
+//    './test/**/*.js',
+//    './test/test-main.js'
+//  ]
+  )
     .pipe(karma({ configFile: 'test/karma.conf.js' }))
     .on('error', function(err) { throw err; });
 });
