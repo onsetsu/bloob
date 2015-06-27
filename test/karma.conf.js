@@ -28,7 +28,8 @@ module.exports = function (config) {
 			'karma-phantomjs-launcher',
 			'karma-jasmine',
 			'karma-coverage',
-			'karma-htmlfile-reporter'
+            'karma-htmlfile-reporter',
+            'karma-requirejs'
 		]
 	});
 };
