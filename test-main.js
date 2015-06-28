@@ -4,7 +4,7 @@ var TEST_REGEXP = /test\.js$/;
 Object.keys(window.__karma__.files).forEach(function(file) {
   if (TEST_REGEXP.test(file)) {
     // Normalize paths to RequireJS module names.
-    allTestFiles.push(file);
+    allTestFiles.push(file.replace(/^\/base\//, 'http://localhost:9876/base/'));
   }
 });
 
@@ -17,7 +17,7 @@ console.log("");
 
 require.config({
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '/base',
+  baseUrl: 'http://localhost:9876/base', // changed from '/base'
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
   /*
