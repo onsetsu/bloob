@@ -27,7 +27,7 @@ gulp.task('test', function(done) {
 //    .pipe(karma({ configFile: 'test/karma.conf.js' }))
 //    .on('error', function(err) { throw err; });
   karmaServer.start({
-    configFile: __dirname + '/test/karma.conf.js',
+    configFile: __dirname + '/karma.conf.js',
     singleRun: true
   }, done);
 });

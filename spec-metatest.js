@@ -20,7 +20,7 @@ describe('MetaTest', function () {
 
 });
 */
-define(['./../../lib/sqr'], function(sqr) {
+define(['./sqr'], function(sqr) {
 
     describe('AMD Test', function() {
 
