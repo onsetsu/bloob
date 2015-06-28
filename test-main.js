@@ -12,8 +12,6 @@ console.log("TEST FILES in require config:");
 allTestFiles.forEach(function(file) {
 console.log(file);
 });
-console.log("");
-
 
 require.config({
   urlArgs: "bust=" + (new Date()).getTime(),
