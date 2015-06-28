@@ -20,7 +20,9 @@ describe('MetaTest', function () {
 
 });
 */
+console.log('spec-metatest: before define');
 define(['./sqr'], function(sqr) {
+console.log('spec-metatest: in define');
 
     describe('AMD Test', function() {
 
@@ -35,3 +37,4 @@ define(['./sqr'], function(sqr) {
     });
 
 });
+console.log('spec-metatest: after define');
