@@ -1,6 +1,6 @@
 module.exports = function (config) {
 	config.set({
-		//basePath : '',
+		basePath : '',
 		frameworks: ['jasmine', 'requirejs'],
         files: [
 //			'../lib/**/*.js',
@@ -11,7 +11,7 @@ module.exports = function (config) {
         ],
         exclude: [
 			'lib/requireconfig.js',
-			'test/karma.conf.js'
+			'karma.conf.js'
         ],
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
