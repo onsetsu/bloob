@@ -21,7 +21,7 @@ describe('MetaTest', function () {
 });
 */
 console.log('spec-metatest: before define');
-define(['./sqr'], function(sqr) {
+define(['./sqr.js'], function(sqr) {
 console.log('spec-metatest: in define');
 
     describe('AMD Test', function() {
