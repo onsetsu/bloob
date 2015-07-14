@@ -20,7 +20,7 @@ module.exports = function (config) {
 		preprocessors: {
 			//'../lib/**/*.js': 'coverage'
             '*.js': 'coverage',
-            '**/*.js': 'coverage',
+            'lib/**/*.js': 'coverage',
 		},
 		coverageReporter: {
 			type : 'text'//,
