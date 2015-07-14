@@ -19,8 +19,9 @@ console.log(file);
 require.config({
   urlArgs: "bust=" + (new Date()).getTime(),
   // Karma serves files under /base, which is the basePath from your config file
-  baseUrl: '',
-    // http://localhost:9876/base',
+  baseUrl:
+    // '',
+    'http://localhost:9876/base',
     // changed from '/base'
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
