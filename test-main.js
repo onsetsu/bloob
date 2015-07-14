@@ -1,3 +1,16 @@
+//window.requirejs.load = do (previous_load = window.requirejs.load) ->
+//(context, moduleName, url) ->
+//url += ".js" unless /\.js$/.test(url)
+//previous_load.call(@, context, moduleName, url)
+
+var previous_load = window.requirejs.load;
+window.requirejs.load = function(context, moduleName, url) {
+  if(!/\.js$/.test(url)) {
+    url += ".js"
+  }
+  previous_load.call(this, context, moduleName, url);
+};
+
 var allTestFiles = [];
 var TEST_REGEXP = /test\.js$/;
 

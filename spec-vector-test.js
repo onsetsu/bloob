@@ -21,7 +21,7 @@ describe('MetaTest', function () {
 });
 */
 console.log('spec-vector-test: before define');
-define(['./lib/num/vectortools.js'], function(VectorTools) {
+define(['./lib/num/vectortools'], function(VectorTools) {
 console.log('spec-vector-test: in define');
 
     describe('AMD Test', function() {
