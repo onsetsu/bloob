@@ -4,7 +4,10 @@ var TEST_REGEXP = /test\.js$/;
 Object.keys(window.__karma__.files).forEach(function(file) {
   if (TEST_REGEXP.test(file)) {
     // Normalize paths to RequireJS module names.
-    allTestFiles.push(file.replace(/^\/base\//, 'http://localhost:9876/base/'));
+    allTestFiles.push(file
+        .replace(/^\/base\//, 'http://localhost:9876/base/')
+        .replace(/\.js$/, '')
+    );
   }
 });
 
