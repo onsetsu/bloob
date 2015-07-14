@@ -5,9 +5,10 @@ module.exports = function (config) {
         files: [
 //			'../lib/**/*.js',
 //			'../test/spec/*.js'
-            {pattern: 'test-main.js', included: true},
+//            {pattern: 'test-main.js', included: true},
             {pattern: '*test.js', included: false},
             {pattern: 'sqr*.js', included: false},
+			'test-main.js'
         ],
         exclude: [
 			'lib/requireconfig.js',
