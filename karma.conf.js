@@ -19,7 +19,8 @@ module.exports = function (config) {
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
 			//'../lib/**/*.js': 'coverage'
-			'*.js': 'coverage'
+            '*.js': 'coverage',
+            '**/*.js': 'coverage',
 		},
 		coverageReporter: {
 			type : 'text'//,
