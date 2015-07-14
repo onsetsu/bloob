@@ -9,7 +9,7 @@ module.exports = function (config) {
             'test-main.js',
             {pattern: '*test.js', included: false},
             {pattern: 'sqr*.js', included: false},
-            {pattern: '*vectortools.js', included: false},
+            {pattern: '**/vectortools.js', included: false},
         ],
         exclude: [
 			'lib/requireconfig.js',
