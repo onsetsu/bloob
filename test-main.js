@@ -6,7 +6,7 @@ Object.keys(window.__karma__.files).forEach(function(file) {
     // Normalize paths to RequireJS module names.
     allTestFiles.push(file
         .replace(/^\/base\//, 'http://localhost:9876/base/')
-        .replace(/\.js$/, '')
+        //.replace(/\.js$/, '')
     );
   }
 });
