@@ -1,4 +1,4 @@
-define(['./lib/num/vectortools'], function(VectorTools) {
+define(['./../lib/num/vectortools'], function(VectorTools) {
 
 	describe('VectorTool Test Test', function() {
 
