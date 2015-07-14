@@ -69,7 +69,7 @@ require.config({
   */
 
   // web server port
-  port:9876,
+  port: 9876,
 
   // dynamically load all test files
   deps: allTestFiles,

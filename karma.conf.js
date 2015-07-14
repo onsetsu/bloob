@@ -7,8 +7,7 @@ module.exports = function (config) {
 //			'../test/spec/*.js'
 //            {pattern: 'test-main.js', included: true},
             'test-main.js',
-            {pattern: '*test.js', included: false},
-            {pattern: 'sqr*.js', included: false},
+            {pattern: 'test/**/*test.js', included: false},
             {pattern: 'lib/**/*.js', included: false},
         ],
         exclude: [
@@ -18,9 +17,7 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-			//'../lib/**/*.js': 'coverage'
-            '*.js': 'coverage',
-            'lib/**/*.js': 'coverage',
+            'lib/**/*.js': 'coverage'
 		},
 		coverageReporter: {
 			type : 'text'//,
