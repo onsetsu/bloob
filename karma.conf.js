@@ -14,12 +14,20 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-            'lib/**/*.js': 'coverage'
-		},
-		coverageReporter: {
+            'lib/**/*.js': ['coverage', 'complexity']
+        },
+        coverageReporter: {
 			type : 'text'//,
 			//dir : 'coverage/'
 		},
+        complexityConfig:{
+            dir:'output_dir',
+            logicalor: true,
+            switchace: true,
+            forin: true,
+            trycatch: true,
+            newmi: true
+        },
 		colors: true,
 		logLevel: config.LOG_DEBUG,
 		htmlReporter: {
