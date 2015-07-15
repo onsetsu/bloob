@@ -40,7 +40,8 @@ module.exports = function (config) {
 			'karma-jasmine',
 			'karma-coverage',
             'karma-htmlfile-reporter',
-            'karma-requirejs'
+            'karma-requirejs',
+            'karma-complexity-preprocessor'
 		]
 	});
 };
