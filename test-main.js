@@ -1,8 +1,4 @@
-//window.requirejs.load = do (previous_load = window.requirejs.load) ->
-//(context, moduleName, url) ->
-//url += ".js" unless /\.js$/.test(url)
-//previous_load.call(@, context, moduleName, url)
-
+// HACK: add .js file extension if missing in requirejs
 var previous_load = window.requirejs.load;
 window.requirejs.load = function(context, moduleName, url) {
   if(!/\.js$/.test(url)) {
