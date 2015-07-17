@@ -14,20 +14,12 @@ module.exports = function (config) {
 		browsers : ['PhantomJS'],
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
-            'lib/**/*.js': ['coverage', 'complexity']
+            'lib/**/*.js': ['coverage']
         },
         coverageReporter: {
 			type : 'text'//,
 			//dir : 'coverage/'
 		},
-        complexityConfig:{
-            dir:'output_dir',
-            logicalor: true,
-            switchace: true,
-            forin: true,
-            trycatch: true,
-            newmi: true
-        },
 		colors: true,
 		logLevel: config.LOG_DEBUG,
 		htmlReporter: {
@@ -40,8 +32,7 @@ module.exports = function (config) {
 			'karma-jasmine',
 			'karma-coverage',
             'karma-htmlfile-reporter',
-            'karma-requirejs',
-            'karma-complexity-preprocessor'
+            'karma-requirejs'
 		]
 	});
 };
