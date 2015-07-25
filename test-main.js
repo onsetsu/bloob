@@ -40,7 +40,6 @@ require.config({
     'underscore': '../lib/underscore',
   },
   */
-  /*
   packages: [
     {
       name: 'num',
@@ -53,7 +52,6 @@ require.config({
       main: 'jello'
     }
   ],
-  */
 
   // example of using a shim, to load non AMD libraries (such as underscore)
   /*
