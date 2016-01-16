@@ -4,7 +4,19 @@ module.exports = function (config) {
 		frameworks: ['jasmine', 'requirejs'],
         files: [
             'test-main.js',
-            {pattern: 'test/**/*test.js', included: false},
+			'lib/external/miniclass.js',
+			'lib/external/jquery.js',
+			'lib/external/jquery-ui-1.8.1.custom.min.js',
+			'lib/external/underscore.js',
+			'lib/external/d3.js',
+			'lib/external/stats.js',
+			'lib/external/dat.gui.js',
+			'lib/external/tweenjs-0.5.1.min.js',
+			'lib/external/preloadjs-0.4.1.min.js',
+			'lib/external/paper-full.js',
+			'lib/external/toxiclibs.js',
+			'lib/external/screenfull.js',
+			{pattern: 'test/**/*test.js', included: false},
             {pattern: 'lib/**/*.js', included: false}
         ],
         exclude: [
