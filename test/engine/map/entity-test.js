@@ -37,15 +37,15 @@ define(function(require) {
 
 				expect(entity.hasComponent(TestComponent)).toBe(false);
 
-				entity.addComponent(TestComponent, expectedComponent);
+				entity.addComponent(expectedComponent);
 				expect(entity.hasComponent(TestComponent)).toBe(true);
 				expect(entity.getComponent(TestComponent)).toEqual(expectedComponent);
 
-				entity.addComponent(TestComponent, expectedComponent2);
+				entity.addComponent(expectedComponent2);
 				expect(entity.getComponents(TestComponent)).toContain(expectedComponent);
 				expect(entity.getComponents(TestComponent)).toContain(expectedComponent2);
 
-				entity.removeComponent(TestComponent, expectedComponent);
+				entity.removeComponent(expectedComponent);
 				expect(entity.getComponents(TestComponent)).not.toContain(expectedComponent);
 				expect(entity.getComponents(TestComponent)).toContain(expectedComponent2);
 
