@@ -39,7 +39,7 @@ define(function(require) {
 
 				entity.addComponent(expectedComponent);
 				expect(entity.hasComponent(TestComponent)).toBe(true);
-				expect(entity.getComponent(TestComponent)).toEqual(expectedComponent);
+				expect(entity.getComponent(TestComponent)).toBe(expectedComponent);
 
 				entity.addComponent(expectedComponent2);
 				expect(entity.getComponents(TestComponent)).toContain(expectedComponent);

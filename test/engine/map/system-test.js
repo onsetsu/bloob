@@ -3,7 +3,9 @@ define(function(require) {
 
 	var Entity = require('./../../../lib/engine/map/entity');
 	var Component = require('./../../../lib/engine/map/component');
+	var System = require('./../../../lib/engine/map/system');
 
+	class TestSystem extends System {}
 	class TestComponent extends Component {}
 
 	describe('System', function() {
