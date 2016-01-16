@@ -2,6 +2,7 @@ language: node_js
 node_js:
   - node
 before_script:
+  - npm install
   - npm install -g jsdoc
   - npm install --save jsdoc gulp-shell
   - npm install -g gulp

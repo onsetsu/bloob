@@ -30,7 +30,7 @@ require.config({
   // Karma serves files under /base, which is the basePath from your config file
   baseUrl:
     // '',
-    'http://localhost:9876/base',
+    'http://localhost:9876/base/lib',
     // changed from '/base'
 
   // example of using a couple path translations (paths), to allow us to refer to different library dependencies, without using relative paths
