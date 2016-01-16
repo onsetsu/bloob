@@ -23,7 +23,20 @@ module.exports = function (config) {
 			'lib/requireconfig.js',
 			'karma.conf.js'
         ],
-		browsers : ['PhantomJS'],
+		//browsers : ['PhantomJS'],
+		browsers: ['Chrome'],
+
+		customLaunchers: {
+			Chrome_Travis_CI: {
+				base: 'Chrome',
+				flags: ['--no-sandbox']
+			},
+			ChromeCanary_Travis_CI: {
+				base: 'ChromeCanary',
+				flags: ['--no-sandbox']
+			}
+		},
+
 		reporters : ['progress', 'spec', 'coverage', 'html'],
 		preprocessors: {
             'lib/**/*.js': ['coverage']
@@ -41,10 +54,15 @@ module.exports = function (config) {
 		plugins : [
 			'karma-spec-reporter',
 			'karma-phantomjs-launcher',
+			'karma-chrome-launcher',
 			'karma-jasmine',
 			'karma-coverage',
             'karma-htmlfile-reporter',
             'karma-requirejs'
 		]
 	});
+
+	if(process.env.TRAVIS) {
+		config.browsers = ['ChromeCanary_Travis_CI'];
+	}
 };
