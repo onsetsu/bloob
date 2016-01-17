@@ -14,9 +14,7 @@ define(function(require) {
 	}
 
 	class TestSystem extends System {
-		update() {
-
-		}
+		update() {}
 	}
 
 	describe('Layer', function() {
@@ -43,8 +41,8 @@ define(function(require) {
 
 			it('should add and remove systems', function () {
 				var layer = new Layer(),
-					entity = new Entity(),
-					entity2 = new Entity(),
+					entity = new Entity('alice'),
+					entity2 = new Entity('bob'),
 					component = new TestComponent('foo'),
 					system = new TestSystem();
 
@@ -54,7 +52,13 @@ define(function(require) {
 				layer.addSystem(system);
 				expect(layer.getSystems()).toContain(system);
 
-				// TODO: check behavior with layer.updateSystems()
+				expect(system.getEntitiesMatching(TestComponent)).toContain(entity);
+				expect(system.getEntitiesMatching(TestComponent)).not.toContain(entity2);
+
+				spyOn(system, 'update').and.callThrough();
+				layer.updateSystems();
+				expect(system.update).toHaveBeenCalled();
+
 				// expect smtg
 				entity.removeComponent(component);
 				expect(layer.getEntityWithComponent(TestComponent)).not.toBeDefined();
