@@ -41,11 +41,11 @@ require.config({
   },
   */
   packages: [
-    {
+/*    {
       name: 'jello',
       location: 'physics',
       main: 'jello'
-    }
+    }*/
   ],
 
   // example of using a shim, to load non AMD libraries (such as underscore)
