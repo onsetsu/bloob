@@ -113,10 +113,24 @@
 		<script src="lib/external/paper-full.js"></script>
 		<script src="lib/external/toxiclibs.js"></script>
 		<script src="lib/external/screenfull.js"></script>
-		
+		<script src="lib/external/require.js"></script>
+		<!--<script data-main="lib/requireconfig" src="lib/external/require.js"></script>-->
+
 		<script src="lib/external/libraryextensions.js"></script>
-		
-		<script data-main="lib/requireconfig" src="lib/external/require.js"></script>
+
+		<script src="lib/external/system.src.js"></script>
+		<script>
+			System.config({
+				transpiler: 'babel',
+				babelOptions: {stage: 0, optional: ['es7.doExpressions']},
+				map: {
+					babel: 'lib/external/babel-browser.js'
+				}
+			});
+
+			System.import('lib/requireconfig.js');
+		</script>
+
 	</head>
 	<body>
 		<!--<canvas id="paper-canvas" resize></canvas>-->
