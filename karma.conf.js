@@ -30,11 +30,11 @@ module.exports = function (config) {
 			Chrome_Travis_CI: {
 				base: 'Chrome',
 				flags: ['--no-sandbox']
-			},
-			ChromeCanary_Travis_CI: {
-				base: 'ChromeCanary',
-				flags: ['--no-sandbox']
-			}
+			}//,
+			//ChromeCanary_Travis_CI: {
+			//	base: 'ChromeCanary',
+			//	flags: ['--no-sandbox']
+			//}
 		},
 
 		reporters : ['progress', 'spec', 'coverage', 'html'],
@@ -62,7 +62,7 @@ module.exports = function (config) {
 		]
 	});
 
-	if(process.env.TRAVIS) {
-		//config.browsers = ['ChromeCanary_Travis_CI'];
-	}
+	//if(process.env.TRAVIS) {
+	//	config.browsers = ['ChromeCanary_Travis_CI'];
+	//}
 };
