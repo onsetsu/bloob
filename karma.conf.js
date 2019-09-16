@@ -63,6 +63,6 @@ module.exports = function (config) {
 	});
 
 	if(process.env.TRAVIS) {
-		config.browsers = ['ChromeCanary_Travis_CI'];
+		//config.browsers = ['ChromeCanary_Travis_CI'];
 	}
 };
